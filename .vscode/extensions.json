@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "naumovs.color-highlight",
+    "ionutvmi.path-autocomplete",
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint",
+    "Vue.volar"
+  ]
+}

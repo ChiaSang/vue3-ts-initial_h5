@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="email=no">
+  <title>Vite App</title>
+  <script>
+    (function () {
+      var url = new URL(location.href)
+      var cacheTimestamp = window.sessionStorage.getItem('team-platform-timestamp')
+      if (!cacheTimestamp) {
+        var newTimestamp = new Date().getTime()
+        if (new URLSearchParams(window.location.search).get('timestamp') || '') {
+          url.search = url.search.replace(/(timestamp=)[^&]*/, '$1' + newTimestamp)
+        } else {
+          var timestampString = 'timestamp=' + newTimestamp
+          url.search += (url.search.indexOf('?') !== -1 ? '&' : '?') + timestampString
+        }
+        window.sessionStorage.setItem('team-platform-timestamp', newTimestamp)
+        window.location.replace(url.href)
+      }
+    })()
+  </script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

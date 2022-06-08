@@ -1,0 +1,46 @@
+:root {
+  // 基础颜色
+  --c-text_blue: #41a3ff;
+  --c-text_red: #ff2f47;
+  --c-alert_text: #f29a00;
+  --c-alert_bg: #fff4c1;
+  --c-main_blue: #41a3ff;
+  --c-btn_hover: #41fffd;
+  --c-btn_main: #41a3ff;
+  --c-btn_sub: #27beef;
+  --c-border_gray: #dee1ea;
+  --c-status_green: #44c288;
+  --c-status_yellow: #edc65b;
+  --c-status_blue: #60ace6;
+  --c-status_gray: #c9c2bd;
+  --c-status_red: #eb4d42;
+  --c-text_black_80: rgba(0, 0, 0, 0.8);
+  --c-text_black_60: rgba(0, 0, 0, 0.6);
+  --c-text_black_40: rgba(0, 0, 0, 0.4);
+
+  // 主题变量
+  // --c-bg_mian: #64cdfd; // 主背景颜色
+  // --bgi-bg_dialog: linear-gradient(-180deg, rgb(64,170,254) 0%,rgb(20,122,250) 100%);
+  // --bgi-bg_main: url("~@/assets/images/bg_main.png"); // 主背景图
+  // --c-shadow: rgba(3, 15, 181, 0.36);
+
+  // --bgi-bg_point_card: url("~@/assets/images/bg_point_card.png"); // 我的积分
+  // --bgi-btn_phonts_rule: url("~@/assets/images/btn_phonts_rule.png"); // 积分规则
+
+  // --bgi-bg_lottery_count: url("~@/assets/images/bg_lottery_count.png"); // 抽奖次数背景
+  // --c-lottery_count_text: #c98000; // 抽奖次数字体颜色
+
+  // --bgi-bg_lottery_grid: url("~@/assets/images/bg_lottery_gird.png"); // 九宫格背景
+  // --bgi-bg_lottery_item: url("~@/assets/images/bg_lottery_item.png"); // 奖品背景
+  // --bgi-bg_lottery_start: url("~@/assets/images/bg_lottery_start.png"); // 开始抽奖
+
+  // --bgi-bg_btn_disabled: url("~@/assets/images/bg_btn_disabled.png"); // 禁用按钮背景
+  // --c-btn_disabled_text: #fff;
+  // --bgi-bg_btn_normal: url("~@/assets/images/bg_btn_normal.png"); // 普通按钮背景
+  // --c-btn_normal_text: #c98000;
+
+  // --bgi-bg_share_hint: url("~@/assets/images/bg_share_hint.png"); // 分享提示
+  // --bgi-btn_close: url("~@/assets/images/btn_close.png"); // 关闭弹窗按钮
+
+  --c-btn_copy_text: #ffa200;
+}

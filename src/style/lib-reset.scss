@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+
+  // transform: translate3d(0,0,0);
+}
+
+#app,
+body,
+html {
+  position: relative;
+  margin: 0;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  // width: 0px;
+  display: none;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex: 1 0 auto;
+  align-items: stretch;
+  justify-content: center;
+  font-family: 'PingFang SC', miui, system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif !important;
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-touch-callout: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+a,
+button,
+input,
+label,
+select,
+textarea {
+  font-family: 'PingFang SC', miui, system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif !important;
+  font-size: 28px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  appearance: none;
+
+  // -webkit-user-select: none;
+  // -moz-user-focus: none;
+  // -moz-user-select: none;
+  // -webkit-appearance: none;
+  // outline: none;
+}
+
+a,
+button {
+  &:active {
+    filter: brightness(0.9);
+  }
+}
+
+#app {
+  position: relative;
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+
+  // max-width: 375px *2;
+  width: 100%;
+  min-height: 704px;
+  font-size: 28px;
+}
+
+.van-pull-refresh {
+  .van-pull-refresh__track {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+  }
+}
+
+.van-list__finished-text,
+.van-list__loading {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}

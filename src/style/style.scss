@@ -1,0 +1,13 @@
+@import './lib-base';
+@import './lib-reset';
+@import './lib-ui';
+
+.main-wrapper {
+  position: relative;
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+}
