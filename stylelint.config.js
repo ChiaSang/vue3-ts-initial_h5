@@ -37,6 +37,7 @@ module.exports = {
     // 'unit-no-unknown': [true, { ignoreUnits: ['rpx'] }],
     'color-function-notation': 'legacy',
     'alpha-value-notation': 'number',
-    'string-quotes': 'single'
+    'string-quotes': 'single',
+    'declaration-block-trailing-semicolon': null
   }
 }

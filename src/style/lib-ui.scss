@@ -324,7 +324,7 @@ $dimensions: ('p':'padding', 'm':'margin');
 @each $dim in $dimensions {
   // 循环四个方向
   @each $dir in $directions {
-    @for $i from 0 through 20 {
+    @for $i from 0 through 16 {
       $size: $i * 5;
 
       .#{nth($dim, 1)}#{nth($dir, 1)}-#{$size} {
@@ -333,11 +333,22 @@ $dimensions: ('p':'padding', 'm':'margin');
     }
   }
 
-  @for $i from 0 through 20 {
+  @for $i from 0 through 16 {
     $wholeSize: $i * 5;
 
     .#{nth($dim, 1)}-#{$wholeSize} {
       #{nth($dim,2)}: #{$wholeSize}px !important;
+    }
+  }
+}
+
+// 循环四个方向
+@each $dir in $directions {
+  @for $i from 0 through 16 {
+    $size: $i * 5;
+
+    .#{nth($dir, 1)}-#{$size} {
+      #{nth($dir,2)}: #{$size}px !important;
     }
   }
 }
