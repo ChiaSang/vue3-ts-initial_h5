@@ -4,7 +4,7 @@ export interface LoginParams {
 }
 export function login(payload?: RequestParams<LoginParams>) {
   return request<ResponseData<string>, LoginParams>({
-    url: '/dingTalk/h5App/login',
+    url: '/dingTalk/login',
     method: 'POST',
     ...payload?.config,
     checkAuth: false,
@@ -23,7 +23,7 @@ export interface GetDingTalkSdkSignData {
 }
 export function getDingTalkSdkSign(payload?: RequestParams<GetDingTalkSdkSignParams>) {
   return request<ResponseData<GetDingTalkSdkSignData>, GetDingTalkSdkSignParams>({
-    url: '/dingTalk/h5App/getDingTalkSdkSign',
+    url: '/dingTalk/getDingTalkSdkSign',
     method: 'POST',
     ...payload?.config,
     checkAuth: false,
@@ -41,7 +41,7 @@ export interface GetUserAccountData {
 }
 export function getUserAccount(payload?: RequestParams<any>) {
   return request<ResponseData<GetUserAccountData>, any>({
-    url: '/dingTalk/h5App/getUserAccount',
+    url: '/dingTalk/getUserAccount',
     method: 'POST',
     ...payload?.config
   })
